@@ -1,0 +1,99 @@
+#navbar {
+	background: #4e84cf;
+	color: #FFF;
+	height: 80px;
+    border-color: white;
+    border-width: 2px;
+	width: 100%;
+}
+#navbar ul, #navbar li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#navbar ul {
+	width: 100%;
+}
+#navbar li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#navbar li a {
+	display: block;
+	line-height: 80px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 19px;
+	font-weight: 600;
+}
+
+#navbar a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+
+#navbar li a:hover {
+	color: #4e84cf;
+	background: #F2F2F2;
+	transition: background 0.3s ease;
+}
+
+#navbar input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#navbar label {
+	display: none;
+	line-height: 80px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#navbar label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#navbar ul.sub-navbars{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#navbar ul.sub-navbars li {
+	display: block;
+	width: 100%;
+}
+#navbar ul.sub-navbars a {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+#navbar li:hover ul.sub-navbars {
+	display: block
+}
+#navbar ul.sub-navbars a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#navbar {position:relative}
+	#navbar ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#navbar ul.sub-navbars {width:100%;position:static;}
+	#navbar ul.sub-navbars a {padding-left:30px;}
+	#navbar li {display:block;float:none;width:auto;}
+	#navbar input, #navbar label {position:absolute;top:0;left:0;display:block}
+	#navbar input {z-index:4}
+	#navbar input:checked + label {color:white}
+	#navbar input:checked + label:before {content:"\00d7"}
+	#navbar input:checked ~ ul {display:block}
+}
