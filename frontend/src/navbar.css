@@ -1,5 +1,5 @@
 #navbar {
-	background: #4e84cf;
+	background: #315097;
 	color: #FFF;
 	height: 80px;
     border-color: white;
@@ -35,7 +35,7 @@
 }
 
 #navbar li a:hover {
-	color: #4e84cf;
+	color: #315097;
 	background: #F2F2F2;
 	transition: background 0.3s ease;
 }
