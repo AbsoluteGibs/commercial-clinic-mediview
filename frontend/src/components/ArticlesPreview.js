@@ -5,10 +5,18 @@ function ArticlesPreview({article})
 {
     return(
         <div className="article_panel">
-            <Link style={{textDecoration: 'none', color: '#FFFFFF'}} to={`/articles/${article.name}`}>
-                <h3>{article.title}</h3>
-                <div>{article.dateOfPublish}</div>
-                <div>{article.shortDesc}</div>
+            <Link style={{textDecoration: 'none', color: '#444'}} to={`/articles/${article.name}`}>
+                <div>
+                    <div style={{maxWidth: '200px', display: 'inline-block', paddingRight: '20px'}}>
+                        <img style={{WebkitBoxShadow: '3px -2px 16px 0px #000000', boxShadow: '-3px -2px 16px 0px #000000', borderRadius: '12px', maxWidth: '100%', maxHeight: '100%'}} src={require(`../images/${article.thumbnail}`)} alt={article.name}/>
+                        {console.log(article.thumbnail)}
+                    </div>
+                    <div style={{maxWidth: '800px', display: 'inline-block', margin: '0'}}>
+                        <h3 style={{paddingBottom: '30px', paddingTop: '30px'}}>{article.title}</h3>
+                        Published Date: {article.dateOfPublish}<br/>
+                        {article.shortDesc}
+                    </div>
+                </div>
             </Link>
         </div>
     )
