@@ -6,7 +6,8 @@
 }
 
 .accordion{
-    background-color: #4e84cf;
+    background-color: #465A89;
+    
     color: #eee;
     cursor: pointer;
     padding: 18px;
@@ -19,7 +20,7 @@
 
 .accordion:hover,
 .active{
-    background-color: #3E69A5;
+    background-color: #38486D;;
 }
 
 .accordion-title{

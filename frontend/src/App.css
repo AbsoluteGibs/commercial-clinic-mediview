@@ -44,9 +44,12 @@ ol {
   background-image: url(./images/about_us_bg.jpg);
   /* can actually browse for a better image, preferrably white background */
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
+  height: 1080px;
+  background-size: cover;
+}
+
+.about_us_container {
+  max-width: 640px;
 }
 
 .animated{
@@ -110,10 +113,6 @@ ol {
   animation-name: fadeIn;
 }
 
-.about_us_container {
-  max-width: 640px;
-}
-
 .article_panel_container{
   margin: auto;
   padding: 18px 18px 18px 0px;
@@ -133,10 +132,18 @@ ol {
 
 .article_panel:hover{
   box-shadow: 0px 0px 25px #858585;
-  /* background-color: #3E69A5; */
-  background-color: #319778;
+  background-color: #4f73c6;
+  /* background-color: #319778; */
   color: #ffffff;
   transition: 0.3s;
+}
+
+.top-padding-50{
+  padding-top: 50px;
+}
+
+.bot-padding-30{
+  padding-bottom: 30px;
 }
 
 .no_text_decor{
