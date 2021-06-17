@@ -1,24 +1,49 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../navbar.css'
 import {Link} from 'react-router-dom'
 
-function Navbar(){
+/**
+ * Defines a Navigation Item shown in a Navbar that navigates to the given URL when clicked.
+ *
+ * @param props
+ * @param {string} props.to target URL to navigate to.
+ * @param {function} props.onClick callback called on click event.
+ * @param {function} children child components to render in navbar.
+ *
+ */
+function Navitem(props) {
+    return (
+        <li class="nav-item">
+            <Link to={props.to} onClick={props.onClick}>{props.children}</Link>
+        </li>
+    );
+}
 
-    function updatenav()
-    {
+/**
+ * Represents a Navbar that allows the user to navigate across the page
+ */
+function Navbar(_props) {
+    // showNavbar: whether to show the navbar in mobile screens <= 800px
+    const [navbarShown, setNavbarShown] = useState(true);
 
+    // toggle the Navbar between showing and hiding in mobile screens < 800px.
+    const toggleNavbar = () => {
+        setNavbarShown(
+            // always shows the Navbar if on a viewport larger than 800px.
+            (window.innerHeight > 800) ? true : !navbarShown
+        );
     }
-
-    return(
+    return (
         <div>
             <nav id='navbar'>
-                <input type='checkbox' id='responsive-navbar'/><label></label>
+                {/* see navbar.css to understand how navbar is toggled by checkbox */}
+                <input type='checkbox' id='responsive-navbar' onClick={toggleNavbar} checked={navbarShown}/><label></label>
                 <ul>
-                    <li><Link to='/articles' onClick={updatenav}>Articles</Link></li>
-                    <li><Link to='/about-us' onClick={updatenav}>About Us</Link></li>
-                    <li><Link to='/contact-us' onClick={updatenav}>Contact Us</Link></li>
-                    <li><Link to='/covid-services' onClick={updatenav}>COVID-19 Services</Link></li>
-                    <li><Link to='/health-screening' onClick={updatenav}>Health Screening Packages</Link></li>
+                    <Navitem to='/articles' onClick={toggleNavbar}>Articles</Navitem>
+                    <Navitem to='/about-us' onClick={toggleNavbar}>About Us</Navitem>
+                    <Navitem to='/contact-us' onClick={toggleNavbar}>Contact Us</Navitem>
+                    <Navitem to='/covid-services' onClick={toggleNavbar}>COVID-19 Services</Navitem>
+                    <Navitem to='/health-screening' onClick={toggleNavbar}>Health Screening Packages</Navitem>
                 </ul>
             </nav>
         </div>
