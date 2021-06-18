@@ -24,7 +24,7 @@ function Navitem(props) {
  */
 function Navbar(_props) {
     // showNavbar: whether to show the navbar in mobile screens <= 800px
-    const [navbarShown, setNavbarShown] = useState(true);
+    const [navbarShown, setNavbarShown] = useState(false);
 
     // toggle the Navbar between showing and hiding in mobile screens < 800px.
     const toggleNavbar = () => {
