@@ -37,7 +37,7 @@ function Navbar(_props) {
         <div>
             <nav id='navbar'>
                 {/* see navbar.css to understand how navbar is toggled by checkbox */}
-                <input type='checkbox' id='responsive-navbar' onClick={toggleNavbar} checked={navbarShown}/><label></label>
+                <input type='checkbox' id='responsive-navbar' onChange={toggleNavbar} checked={navbarShown}/><label></label>
                 <ul>
                     <Navitem to='/articles' onClick={toggleNavbar}>Articles</Navitem>
                     <Navitem to='/about-us' onClick={toggleNavbar}>About Us</Navitem>
