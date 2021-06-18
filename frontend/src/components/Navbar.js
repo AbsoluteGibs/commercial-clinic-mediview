@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom'
  */
 function Navitem(props) {
     return (
-        <li class="nav-item">
+        <li className="nav-item">
             <Link to={props.to} onClick={props.onClick}>{props.children}</Link>
         </li>
     );
@@ -37,7 +37,7 @@ function Navbar(_props) {
         <div>
             <nav id='navbar'>
                 {/* see navbar.css to understand how navbar is toggled by checkbox */}
-                <input type='checkbox' id='responsive-navbar' onClick={toggleNavbar} checked={navbarShown}/><label></label>
+                <input type='checkbox' id='responsive-navbar' onChange={toggleNavbar} checked={navbarShown}/><label></label>
                 <ul>
                     <Navitem to='/articles' onClick={toggleNavbar}>Articles</Navitem>
                     <Navitem to='/about-us' onClick={toggleNavbar}>About Us</Navitem>
