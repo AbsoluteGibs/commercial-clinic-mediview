@@ -28,7 +28,7 @@ function App() {
             {/* Where content is generated depending on page clicked, aka website body */}
             <Switch>
               <Route path="/articles" exact component={Articles}/>
-              <Route path={"/articles/:fullArticle"} component={Article}/>
+              <Route path="/articles/:fullArticle" component={Article}/>
               <Route path="/about-us" exact component={About}/>
               <Route path="/contact-us" exact component={ContactUs}/>
               <Route path="/covid-services" exact component={CovidServices}/>
