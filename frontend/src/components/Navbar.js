@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom'
  */
 function Navitem(props) {
     return (
-        <li class="nav-item">
+        <li className="nav-item">
             <Link to={props.to} onClick={props.onClick}>{props.children}</Link>
         </li>
     );
