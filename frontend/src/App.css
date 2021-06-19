@@ -114,8 +114,8 @@ ol {
 }
 
 .article_panel_container{
-  margin: auto;
   padding: 18px 18px 18px 0px;
+  max-width: 1000px;
 }
 
 .article_panel{
@@ -124,7 +124,6 @@ ol {
   width: 100%;
   padding: 20px;
   background: #ffffff;
-  max-width: 1000px;
   -webkit-box-shadow:-3px -2px 16px 0px #000000;
   -moz-box-shadow:-3px -2px 16px 0px #000000;
   box-shadow:-3px -2px 16px 0px #000000;
@@ -134,7 +133,6 @@ ol {
   box-shadow: 0px 0px 25px #858585;
   background-color: #4f73c6;
   /* background-color: #319778; */
-  color: #ffffff;
   transition: 0.3s;
 }
 
@@ -147,7 +145,6 @@ ol {
 }
 
 .no_text_decor{
-  text-decoration: none;
   color: #444;
 }
 
