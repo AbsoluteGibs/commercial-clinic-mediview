@@ -3,7 +3,7 @@ import React from 'react'
 function PreEventART()
 {
     return(
-        <div>
+        <div style={{overflowX: 'auto'}}>
             <table style={{width: '70%'}}>
                 <tbody>
                     <tr style={{height: '23px'}}>

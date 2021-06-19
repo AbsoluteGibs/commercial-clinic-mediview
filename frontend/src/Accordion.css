@@ -47,6 +47,10 @@
 .accordion-content{
     font-weight: 400;
     font-size: 14px;
-    padding: 40px;
+    padding: 20px;
     color: #393E3F;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion-content{font-size: 12px; padding: 12px;}
 }

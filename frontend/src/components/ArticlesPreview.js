@@ -10,7 +10,7 @@ function ArticlesPreview({article})
                     <div>
                         <div style={{maxWidth: '200px', display: 'inline-block', paddingRight: '20px'}}>
                             <img style={{borderRadius: '12px', maxWidth: '100%', maxHeight: '100%'}} src={require(`../images/${article.thumbnail}`)} alt={article.name}/>
-                            {console.log(article.thumbnail)}
+                            {/* {console.log(article.thumbnail)} */}
                         </div>
                         <div style={{maxWidth: '800px', display: 'inline-block', margin: '0'}}>
                             <h3 style={{paddingBottom: '30px', paddingTop: '30px'}}>{article.title}</h3>
