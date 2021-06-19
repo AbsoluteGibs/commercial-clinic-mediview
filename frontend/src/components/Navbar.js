@@ -30,7 +30,7 @@ function Navbar(_props) {
     const toggleNavbar = () => {
         setNavbarShown(
             // always shows the Navbar if on a viewport larger than 800px.
-            (window.innerHeight > 800) ? true : !navbarShown
+            (window.innerWidth > 800) ? true : !navbarShown
         );
     }
     return (
