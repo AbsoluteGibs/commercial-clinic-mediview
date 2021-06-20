@@ -1,0 +1,82 @@
+/*
+ * commercial-clinic-mediview
+ * Home Page: Landing Section Styles
+*/
+
+/* common and mobile styling */
+section#landing {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 3.6vh;
+    padding-top: 3.6vh;
+    padding-left: 4.2vw;
+    padding-right: 4.2vw;
+}
+
+div.pitch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: space-evenly;
+    order: 2;
+}
+
+div.pitch h1 {
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+img.hero {
+    justify-self: center;
+    align-self: center;
+    max-width: 64vmin;
+    order: 1
+}
+
+a.cta-button, a.cta-button:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #295654;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* tablet styling */
+@media only screen and (min-width: 600px) {
+    a.cta-button {
+        max-width: 20vw;
+    }
+
+}
+
+/* desktop styling */
+@media only screen and (min-width: 992px) {
+    section#landing {
+        padding-right: 8vw;
+        padding-left: 8vw;
+        padding-top: 12vh;
+        padding-bottom: 12vh;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 8vw;
+        align-items: center;
+    }
+    
+    div.pitch {
+        order: 1;
+    }
+
+    div.pitch h1 {
+        margin-bottom: 2.4vh;
+    }
+    
+    div.pitch p {
+        margin-bottom: 3.2vh;
+    }
+    
+    img.hero {
+        order: 2;
+    }
+}
