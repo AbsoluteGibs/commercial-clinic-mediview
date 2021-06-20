@@ -34,8 +34,6 @@ img.hero {
 /* desktop styling */
 @media only screen and (min-width: 992px) {
     section#landing {
-        padding-right: 8vw;
-        padding-left: 8vw;
         padding-top: 12vh;
         padding-bottom: 8vh;
         grid-template-columns: 20% 1fr;
