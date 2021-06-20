@@ -1,12 +1,11 @@
 version: "3.8"
 services:
   app:
-    depends_on: 
-      - db
     build:
       context: .
     volumes:
       - .:/frontend
+    stdin_open: true
     ports:
       - 3000:3000
     image: app:react
