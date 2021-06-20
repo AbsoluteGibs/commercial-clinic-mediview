@@ -1,16 +1,16 @@
 /*
  * commercial-clinic-mediview
- * Card UI Component
+ * Service Card UI Component
 */
 
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import './Card.css'
+import './ServiceCard.css'
 import '../Button.css'
 
 /**
- * Renders a Card IE element with header, description and call to action.
+ * Renders a Service Card URL element with header, description and call to action.
  *
  * @param {Object} props Card component props.
  * @param {string} props.title Title to show in the cards header.
@@ -19,9 +19,9 @@ import '../Button.css'
  * @param {string} props.ctaTitle Title of the call to action button.
  * @param {string} props.ctaTo URL to navigate to if the call to action button is clicked.
 */
-export default function Card(props) {
+export default function ServiceCard(props) {
     return (
-        <div className="card">
+        <div className="service-card">
             <div className="header">
                 <img src={props.backgroundSrc} alt="background" />
                 <h2 className="title">{props.title}</h2>
