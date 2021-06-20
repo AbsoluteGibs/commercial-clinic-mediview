@@ -5,9 +5,7 @@ import ArticlePreview from './ArticlesPreview'
 // TO-DO: Create database of articles - date published, author, content.
 // Articles are self-written
 
-
 // TO-DO advanced: create middlewares
-
 
 function Articles(){
     const [articlesDB, setArticlesDB] = useState([])
@@ -16,7 +14,7 @@ function Articles(){
         axios.get('http://localhost:3001/articlesDatabase')
         .then((response) => {
             setArticlesDB(response.data)
-            //console.log(response.data)
+            console.log(response.data)
         })
     }
 
