@@ -9,12 +9,12 @@ import {SERVICE_SECTION_ID} from '../services/Services'
 
 import HeroImage from '../../../images/home_page_landing_hero@1x.png'
 import './Landing.css'
-import '../../Button.css'
+import '../../../components/Button.css'
 
 /**
- * Landing component renders the landing section on the homepage
+ * LandingSection component renders the landing page section on the HomePage
 */
-export default function Landing() {
+export default function LandingSection() {
     return (
         <section id="landing">
             <div className="pitch">

@@ -9,9 +9,6 @@ section#landing {
     grid-template-columns: 100%;
     grid-template-rows: 1fr auto;
     grid-row-gap: 3.6vh;
-    padding-top: 3.6vh;
-    padding-left: 4.2vw;
-    padding-right: 4.2vw;
 }
 
 div.pitch {
@@ -40,7 +37,7 @@ img.hero {
         padding-right: 8vw;
         padding-left: 8vw;
         padding-top: 12vh;
-        padding-bottom: 12vh;
+        padding-bottom: 8vh;
         grid-template-columns: 20% 1fr;
         grid-template-rows: auto;
         grid-column-gap: 8vw;

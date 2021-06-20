@@ -3,12 +3,14 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Logo from './components/Logo'
 
-import Articles from './components/ArticlesContent'
-import Article from './components/Article'
+
 import About from './components/About'
+import Article from './components/Article'
+import Articles from './components/ArticlesContent'
 import ContactUs from './components/ContactUs'
 import CovidServices from './components/CovidServices'
 import HealthScreening from './components/HealthScreening'
+import HomePage from './pages/homepage/HomePage'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -35,6 +37,7 @@ function App() {
                         <Route path="/contact-us" exact component={ContactUs}/>
                         <Route path="/covid-services" exact component={CovidServices}/>
                         <Route path="/health-screening" exact component={HealthScreening}/>
+                        <Route path="/" exact component={HomePage}/>
                     </Switch>
                 </main>
             </Router>
