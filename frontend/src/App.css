@@ -22,6 +22,8 @@ ol {
 }
 
 .content_body {
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
@@ -41,8 +43,8 @@ ol {
 }
 
 .about_us_page_container {
+  /* background image not responsive */
   background-image: url(./images/about_us_bg.jpg);
-  /* can actually browse for a better image, preferrably white background */
   background-repeat: no-repeat;
   height: 1080px;
   background-size: cover;
@@ -159,21 +161,27 @@ tr, td{
   border-width: 0px 0px;
 }
 
+.operating_info{
+  display: flex;
+}
+
+.operating_info_text_content{
+  flex: 3;
+}
+
+.operating_info_map_content{
+  flex: 4;
+}
+
 .iframe-container{
-  position: relative;
   overflow: hidden;
-  padding-bottom: 56.25%;
+  display: flex;
+  justify-content: center;
 }
 
 .responsive-iframe{
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  bottom: 5%;
-  right: 5%;
-  width: 80%;
-  height: 80%;
-  border: 2px;
+  border: groove 1px;
+  flex-basis: 90%;
 }
 
 .logo-container-top{
@@ -207,6 +215,8 @@ h2, h3{
 @media screen and (max-width: 768px) {
   #primary { width:67% }
   #secondary { width:100%; margin:0; border:none; }
+  .operating_info {flex-direction: column;}
+  
 }
 
 /*  slider buttons */

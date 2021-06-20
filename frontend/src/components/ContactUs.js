@@ -6,12 +6,13 @@ const mapsUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3687
 function ContactUs(){
     return(
         <div className="content_body animated fadeInRight" id="primary">
-            <h1 style={{paddingBottom: '50px'}}>Contact us</h1>
+            <h1 className='bot-padding-30'>Contact us</h1>
             <p>For further enquiries and/or help, please make use of our contact information below: </p>
-            <div style={{paddingTop: "40px"}}>
-                <div>
+            <div className='top-padding-50'/>
+            <div className='operating_info'>
+                <div className='operating_info_text_content'>
                     <h2>Consultation Hours</h2>
-                    <div style={{float: 'left'}}>
+                    <div>
                         <ConsultationHoursInfo/>
                         <div style={{paddingTop: "50px"}}>
                             <h2>Address</h2>
@@ -25,11 +26,11 @@ function ContactUs(){
                         </div>
                         <div style={{paddingTop: "50px", paddingBottom: "50px"}}>
                             <h2>Email</h2>
-                            <div>mediviewacc@gmail.com</div>
+                            <div><a href="mailto:mediviewacc@gmail.com">mediviewacc@gmail.com</a></div>
                         </div>
                     </div>
                 </div>
-                <div className="iframe-container">
+                <div className="operating_info_map_content iframe-container">
                     <iframe className="responsive-iframe" title="Google Maps Location" src={mapsUrl} allowFullScreen="" loading="lazy"></iframe>
                 </div>
             </div>
