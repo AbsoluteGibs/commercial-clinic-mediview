@@ -1,6 +1,17 @@
 version: "3.8"
 services:
+  db:
+    ports:
+      - 3001:3001
+    image: app:react
+    container_name: json_server_container
+    volumes:
+      - .:/frontend
+    restart: always
+    command: json-server --watch articles_db.json -p3001
   app:
+    depends_on: 
+      - db
     build:
       context: .
     volumes:

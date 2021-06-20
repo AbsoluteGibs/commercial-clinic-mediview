@@ -4,8 +4,8 @@ import '../ConsultationHoursTable.css'
 function ConsultationHoursInfo()
 {
     return(
-        <div>
-            <table className="consultation_table" style={{height: "183px", float: "left", width: "387"}}>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+            <table>
                 <tbody>
                     <tr style={{height: "23px"}}>
                         <td style={{height: "23px", width: "300px", borderWidth: '1px 0'}}>Days</td>
