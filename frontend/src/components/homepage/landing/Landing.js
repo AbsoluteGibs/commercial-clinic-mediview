@@ -9,6 +9,7 @@ import {SERVICE_SECTION_ID} from '../services/Services'
 
 import HeroImage from '../../../images/home_page_landing_hero@1x.png'
 import './Landing.css'
+import '../../Button.css'
 
 /**
  * Landing component renders the landing section on the homepage
@@ -23,7 +24,7 @@ export default function Landing() {
                     provides quality and professional healthcare to you and your
                     family since 1994.
                 </p>
-                <Link className="cta-button" to={`/#${SERVICE_SECTION_ID}`}>View Services</Link>
+                <Link className="button" to={`/#${SERVICE_SECTION_ID}`}>View Services</Link>
             </div>
             <img className="hero" src={HeroImage} />
         </section>

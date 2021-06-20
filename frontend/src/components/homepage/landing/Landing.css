@@ -34,23 +34,6 @@ img.hero {
     order: 1
 }
 
-a.cta-button, a.cta-button:visited {
-    color: white;
-    text-decoration: none;
-    background-color: #295654;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-/* tablet styling */
-@media only screen and (min-width: 600px) {
-    a.cta-button {
-        max-width: 20vw;
-    }
-
-}
-
 /* desktop styling */
 @media only screen and (min-width: 992px) {
     section#landing {
