@@ -1,0 +1,39 @@
+/*
+ * commercial-clinic-mediview
+ * Card UI Component styling
+*/
+
+div.card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-items: space-evenly;
+    border-style: solid;
+    border-width: 1pt;
+    border-color: #F0F0F0;
+}
+
+div.card div.header {
+    position: relative;
+}
+
+div.card div.header img {
+    width: 18rem;
+}
+
+div.card div.header h2 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFC187;
+}
+
+div.card div.body {
+    padding-top: 2.8vh;
+    padding-bottom: 2.8vh;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
