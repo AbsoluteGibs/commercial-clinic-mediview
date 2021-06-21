@@ -1,8 +1,6 @@
 version: "3.8"
 services:
   app:
-    depends_on: 
-      - db
     build:
       context: .
     volumes:
