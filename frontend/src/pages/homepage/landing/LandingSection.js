@@ -4,7 +4,7 @@
 */
 
 import React from 'react'
-import {HashLink} from 'react-router-hash-link';
+import {HashLink} from 'react-router-hash-link'
 import {SERVICE_SECTION_ID} from '../services/ServicesSection'
 
 import HeroImage from '../../../images/home_page_landing_hero@1x.png'

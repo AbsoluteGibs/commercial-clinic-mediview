@@ -47,7 +47,7 @@ export default function ServicesSection() {
                     title="Sinovac Vaccine"
                     backgroundSrc={VaccineBackground}
                     ctaTitle="Learn More"
-                    ctaTo="/covid-services">
+                    ctaTo="/sinovac-advisory">
                     <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
                     <p>Mediview provides COVID-19 vaccination via the Sinovac Vaccine.</p>
                 </ServiceCard>
