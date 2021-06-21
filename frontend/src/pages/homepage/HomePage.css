@@ -6,9 +6,9 @@
 section#homepage {
     display: grid;
     grid-template-rows: repeat(3, auto);
-    grid-row-gap: 2vh;
-    padding-top: 3.6vh;
-    padding-bottom: 6vh;
+    grid-row-gap: 6vh;
+    padding-top: 4vh;
+    padding-bottom: 8vh;
     padding-left: 10vw;
     padding-right: 10vw; 
     background-color: #F9F9F9;
