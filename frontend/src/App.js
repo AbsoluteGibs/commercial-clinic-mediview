@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar/Navbar'
 import Logo from './components/Logo'
 
 
-import About from './components/About'
-import Article from './components/Article'
-import Articles from './components/ArticlesContent'
-import ContactUs from './components/ContactUs'
-import CovidServices from './components/CovidServices'
-import HealthScreening from './components/HealthScreening'
-import SinovacAdvisory from './components/SinovacAdvisory'
+import About from './pages/about_us/About'
+import Article from './pages/articles/Article'
+import Articles from './pages/articles/ArticlesContent'
+import ContactUs from './pages/contact_us/ContactUs'
+import CovidServices from './pages/covid_services/CovidServices'
+import HealthScreening from './pages/health_screening/HealthScreening'
+import SinovacAdvisory from './pages/SinovacAdvisory'
 import HomePage from './pages/homepage/HomePage'
 import Footer from './components/footer/Footer'
 
@@ -42,8 +42,6 @@ function App() {
                         <Route path="/" exact component={HomePage}/>
                     </Switch>
                 </main>
-                
-                <div className="top-padding-50" />
 
                 <Footer />
             </Router>

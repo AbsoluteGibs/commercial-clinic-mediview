@@ -32,18 +32,6 @@ ol {
   to {opacity: 1;}
 }
 
-.about_us_page_container {
-  /* background image not responsive */
-  background-image: url(./images/about_us_bg.jpg);
-  background-repeat: no-repeat;
-  height: 1080px;
-  background-size: cover;
-}
-
-.about_us_container {
-  max-width: 640px;
-}
-
 .animated{
   -webkit-animation-duration:0.7s;
   animation-duration:0.7s;

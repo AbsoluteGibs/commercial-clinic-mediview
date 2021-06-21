@@ -1,10 +1,10 @@
 import React from 'react'
 import Accordion from './Accordion';
 //import ReactDOMServer from 'react-dom/server'
-import ARTIndividual from './ARTIndividual'
-import PCRSwabTest from './PCRSwabTest'
-import PreEventART from './PreEventART'
-import ARTWeddings from './ARTWeddings'
+import ARTIndividual from './AccordionContent/ARTIndividual'
+import PCRSwabTest from './AccordionContent/PCRSwabTest'
+import PreEventART from './AccordionContent/PreEventART'
+import ARTWeddings from './AccordionContent/ARTWeddings'
 
 function CovidServices()
 {
@@ -15,6 +15,7 @@ function CovidServices()
             <Accordion title="ART Test for Individuals" content={<ARTIndividual/>} />
             <Accordion title="Pre-Event ART" content={<PreEventART/>} />
             <Accordion title="ART for Weddings" content={<ARTWeddings/>} />
+            <div className="top-padding-50"/><div className="top-padding-50"/>
         </div>
     );
 }

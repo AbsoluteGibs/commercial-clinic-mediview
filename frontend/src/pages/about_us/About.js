@@ -1,8 +1,10 @@
 import React from 'react'
+import './About.css'
 
 function About(){
     return(
         <div className="about_us_page_container">
+            <div className="bg-image"/>
             <div className="about_us_container animated fadeInRight" style={{maxWidth: "640px"}}>
                 <div className="content_body" id="primary">
                     <h1 style={{paddingBottom: '50px'}}>About us</h1>

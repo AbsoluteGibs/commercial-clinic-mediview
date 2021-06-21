@@ -5,7 +5,7 @@
 
 import React from 'react'
 import ArticleCard from '../../../components/card/ArticleCard'
-import ArticlesDB from '../../../components/ArticlesDB'
+import ArticlesDB from '../../articles/ArticlesDB'
 
 import './ArticlesSection.css'
 

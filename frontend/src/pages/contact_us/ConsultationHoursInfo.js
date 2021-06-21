@@ -1,5 +1,5 @@
 import React from 'react'
-import '../ConsultationHoursTable.css'
+import './ConsultationHoursTable.css'
 
 function ConsultationHoursInfo()
 {

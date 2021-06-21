@@ -9,7 +9,7 @@ function ArticlesPreview({article})
                 <div className="article_panel">
                     <div>
                         <div style={{maxWidth: '200px', display: 'inline-block', paddingRight: '20px'}}>
-                            <img style={{borderRadius: '12px', maxWidth: '100%', maxHeight: '100%'}} src={require(`../images/${article.thumbnail}`)} alt={article.name}/>
+                            <img style={{borderRadius: '12px', maxWidth: '100%', maxHeight: '100%'}} src={require(`../../images/${article.thumbnail}`)} alt={article.name}/>
                             {/* {console.log(article.thumbnail)} */}
                         </div>
                         <div style={{maxWidth: '800px', display: 'inline-block', margin: '0'}}>

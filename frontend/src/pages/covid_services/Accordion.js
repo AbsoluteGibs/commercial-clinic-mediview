@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react'
-import ArrowIcon from './ArrowIcon'
+import ArrowIcon from '../../components/ArrowIcon'
 
-import "../Accordion.css"
+import "./Accordion.css"
 
 function Accordion({title, content})
 {
