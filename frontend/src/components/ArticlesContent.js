@@ -12,11 +12,6 @@ function Articles(){
     const [articlesDB, setArticlesDB] = useState([])
 
     const hook = () => {
-        // axios.get('http://localhost:3001/articlesDatabase')
-        // .then((response) => {
-        //     setArticlesDB(response.data)
-        //     //console.log(response.data)
-        // })
         setArticlesDB(ArticlesDB)
     }
 
