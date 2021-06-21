@@ -1,0 +1,40 @@
+/*
+ * commercial-clinic-mediview
+ * Article Card UI Component styling
+*/
+
+
+div.article-card {
+    padding-top: 4.2vh;
+    padding-bottom: 3.2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+}
+
+div.article-card h2 {
+    font-size: 1.64rem;
+    margin-bottom: 0.8rem;
+}
+
+div.article-card span.published-date {
+    display: block;
+    font-size: 0.8rem;
+    color: #AAAAAA;
+}
+
+div.article-card p.describe {
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
+    
+}
+
+@media only screen and (min-width: 600px) {
+    div.article-card .button {
+        align-self: center;
+        width: 16em;
+    }
+}
