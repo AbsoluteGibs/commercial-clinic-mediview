@@ -4,9 +4,9 @@
 */
 
 import React from 'react'
-import LandingSection from './landing/Landing'
-import ServicesSection from './services/Services'
-import ArticlesSection from './articles/Articles'
+import LandingSection from './landing/LandingSection'
+import ServicesSection from './services/ServicesSection'
+import ArticlesSection from './articles/ArticlesSection'
 
 import './HomePage.css'
 

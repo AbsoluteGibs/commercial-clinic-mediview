@@ -10,7 +10,7 @@ import ScreeningBackground from '../../../images/home_page_services_screening_bg
 import TestingBackground from '../../../images/home_page_services_testing_bg@1x.png'
 import VaccineBackground from '../../../images/home_page_services_vaccine_bg@1x.png'
 
-import './Services.css'
+import './ServicesSection.css'
 
 /**
  * id assigned to the rendered {@link Service} component

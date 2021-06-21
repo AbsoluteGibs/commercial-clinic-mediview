@@ -7,7 +7,7 @@ import React from 'react'
 import ArticleCard from '../../../components/card/ArticleCard'
 import ArticlesDB from '../../../components/ArticlesDB'
 
-import './Articles.css'
+import './ArticlesSection.css'
 
 /**
  * ArticlesSection component renders the articles section of the HomePage form ArticlesDB
