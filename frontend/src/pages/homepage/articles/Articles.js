@@ -3,33 +3,21 @@
  * Home Page: Articles section
 */
 
-import axios from 'axios';
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import ArticleCard from '../../../components/card/ArticleCard'
-import {ARTICLES_URL} from '../../../components/ArticlesContent'
+import ArticlesDB from '../../../components/ArticlesDB'
 
 import './Articles.css'
 
 /**
- * ArticlesSection component renders the articles section of the HomePage.
+ * ArticlesSection component renders the articles section of the HomePage form ArticlesDB
  *
  * @param {object} props Component props.
  * @param {number} [props.maxArticles=4] Max no. of articles to show.
 */
 export default function ArticlesSection({maxArticles = 4}) {
-    const [articles, setArticles] = useState([]);
-    
-    // retrieve article data from json server
-    useEffect(() => {
-        axios.get(ARTICLES_URL)
-            .then((response) => setArticles(response.data))
-            // log error on failure to retrieve article data
-            .catch((e) =>  console.error(e))
-    // ensure the effect only runs once by specifying empty deps
-    }, []);
-        
     // limit articles shown to maximum specified
-    const shownArticles = articles.slice(0, Math.min(articles.length, maxArticles))
+    const shownArticles = ArticlesDB.slice(0, Math.min(ArticlesDB.length, maxArticles));
         
     // formats dates in format DD-MM-YY into DD/MM/YYYY for rendering
     const formatDate = (inDateStr) => {
