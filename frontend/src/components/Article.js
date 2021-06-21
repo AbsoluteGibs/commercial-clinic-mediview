@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import ArticlesDB from './ArticlesDB'
 import parse from 'html-react-parser'
 
 function Article({match})
@@ -11,11 +11,13 @@ function Article({match})
     const [altState, setAltState] = useState('hide')
 
     const getArticle = () => {
-        axios.get(`http://localhost:3001/articlesDatabase?name=${match.params.fullArticle}`)
-        .then((response) => {
-            setArticle(response.data)
+        ArticlesDB.forEach(selectedArticle => {
+            if (selectedArticle.name === `${match.params.fullArticle}`)
+            {
+                // console.log(selectedArticle)
+                setArticle(selectedArticle)
+            }
         })
-        .catch(e => console.log(e))
     }
 
     function sliderUpdate()
@@ -61,11 +63,9 @@ function Article({match})
         getArticle()
     }, [])
 
-    //console.log(article)
-
     return(
         <div>
-            {article.map(articleDetails => articleRender(articleDetails))}
+            {articleRender(article)}
         </div>
     )
 }

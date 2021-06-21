@@ -41,7 +41,7 @@ export default function ServicesSection() {
                     ctaTitle="Learn More"
                     ctaTo="/covid-services">
                     <p>Pre-event testing is required for large scale events such as trade shows and weddings.</p>
-                    <p>Mediview provides ART tests for events and PCR tests individuals going overseas.</p>
+                    <p>Mediview provides ART tests for events and PCR tests for individuals going overseas.</p>
                 </ServiceCard>
                 <ServiceCard
                     title="Sinovac Vaccine"

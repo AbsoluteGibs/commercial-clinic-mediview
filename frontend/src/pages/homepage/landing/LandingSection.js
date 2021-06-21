@@ -24,9 +24,9 @@ export default function LandingSection() {
                     provides quality and professional healthcare to you and your
                     family since 1994.
                 </p>
-                <HashLink className="button" to={`/#${SERVICE_SECTION_ID}`}>View Services</HashLink>
+                <HashLink className="button" smooth to={`/#${SERVICE_SECTION_ID}`}>View Services</HashLink>
             </div>
-            <img className="hero" src={HeroImage} />
+            <img alt="homepage" className="hero" src={HeroImage} />
         </section>
     )
 }

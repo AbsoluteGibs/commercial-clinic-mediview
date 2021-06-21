@@ -34,6 +34,7 @@ export default function ArticlesSection({maxArticles = 4}) {
             <div className="deck">
                 {
                     shownArticles.map((a) => <ArticleCard
+                        key={a.title}
                         title={a.title}
                         publishedAt={formatDate(a.dateOfPublish)}
                         description={a.shortDesc}

@@ -43,6 +43,8 @@ function App() {
                     </Switch>
                 </main>
                 
+                <div className="top-padding-50" />
+
                 <Footer />
             </Router>
         </div>

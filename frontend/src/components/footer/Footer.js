@@ -51,7 +51,7 @@ export default function Footer() {
             
             <section className="consult-hours">
                 <h4>Consultation Hours</h4>
-                <p>
+                <div>
                     Monday, Tuesday	
                     <ul>
                         <li>8.30am - 12.30pm</li>
@@ -67,7 +67,7 @@ export default function Footer() {
                     <ul>
                         <li>8.30am - 12.30pm</li>
                     </ul>
-                </p>
+                </div>
             </section>
         </footer>
     )
