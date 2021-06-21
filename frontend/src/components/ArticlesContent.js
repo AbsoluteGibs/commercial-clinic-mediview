@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 import ArticlePreview from './ArticlesPreview'
+import ArticlesDB from './ArticlesDB'
 
 // TO-DO: Create database of articles - date published, author, content.
 // Articles are self-written
@@ -13,11 +14,12 @@ function Articles(){
     const [articlesDB, setArticlesDB] = useState([])
 
     const hook = () => {
-        axios.get('http://localhost:3001/articlesDatabase')
-        .then((response) => {
-            setArticlesDB(response.data)
-            //console.log(response.data)
-        })
+        // axios.get('http://localhost:3001/articlesDatabase')
+        // .then((response) => {
+        //     setArticlesDB(response.data)
+        //     //console.log(response.data)
+        // })
+        setArticlesDB(ArticlesDB)
     }
 
     useEffect(hook, [])
