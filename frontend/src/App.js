@@ -11,6 +11,7 @@ import ContactUs from './components/ContactUs'
 import CovidServices from './components/CovidServices'
 import HealthScreening from './components/HealthScreening'
 import HomePage from './pages/homepage/HomePage'
+import Footer from './components/footer/Footer'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -40,6 +41,8 @@ function App() {
                         <Route path="/" exact component={HomePage}/>
                     </Switch>
                 </main>
+                
+                <Footer />
             </Router>
         </div>
     );
