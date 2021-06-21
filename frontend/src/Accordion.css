@@ -21,6 +21,7 @@
 .accordion:hover,
 .active{
     background-color: #38486D;;
+    transition: 0.3s
 }
 
 .accordion-title{

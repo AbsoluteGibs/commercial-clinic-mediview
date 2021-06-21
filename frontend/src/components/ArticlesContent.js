@@ -6,9 +6,7 @@ import ArticlesDB from './ArticlesDB'
 // TO-DO: Create database of articles - date published, author, content.
 // Articles are self-written
 
-
 // TO-DO advanced: create middlewares
-
 
 function Articles(){
     const [articlesDB, setArticlesDB] = useState([])
