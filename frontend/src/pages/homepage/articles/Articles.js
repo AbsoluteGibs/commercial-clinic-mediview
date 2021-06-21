@@ -25,7 +25,8 @@ export default function ArticlesSection({maxArticles = 4}) {
             .then((response) => setArticles(response.data))
             // log error on failure to retrieve article data
             .catch((e) =>  console.error(e))
-    });
+    // ensure the effect only runs once by specifying empty deps
+    }, []);
         
     // limit articles shown to maximum specified
     const shownArticles = articles.slice(0, Math.min(articles.length, maxArticles))
