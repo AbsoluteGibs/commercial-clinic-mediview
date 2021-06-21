@@ -9,6 +9,7 @@ import About from './components/About'
 import ContactUs from './components/ContactUs'
 import CovidServices from './components/CovidServices'
 import HealthScreening from './components/HealthScreening'
+import SinovacAdvisory from './components/SinovacAdvisory'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -33,6 +34,7 @@ function App() {
               <Route path="/contact-us" exact component={ContactUs}/>
               <Route path="/covid-services" exact component={CovidServices}/>
               <Route path="/health-screening" exact component={HealthScreening}/>
+              <Route path="/sinovac-advisory" exact component={SinovacAdvisory}/>
             </Switch>
           </div>
         </header>
