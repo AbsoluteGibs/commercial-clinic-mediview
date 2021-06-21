@@ -1,0 +1,64 @@
+/*
+ * commercial-clinic-mediview
+ * Home Page
+*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 4vw;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #295554;
+    
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+
+    font-size: 0.8rem;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+}
+
+footer h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+footer section p {
+    margin-top: 0;
+    opacity: 0.92;
+}
+
+footer .sitemap .header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.6rem;
+}
+
+footer .sitemap .header h3 {
+    max-width: 9.2rem;
+    margin-bottom: 0;
+}
+
+
+footer .sitemap .header img {
+    object-fit: contain;
+}
+
+footer .sitemap a, footer .sitemap a:visited {
+    margin-bottom: 0.4rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 992px) {
+    footer { 
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

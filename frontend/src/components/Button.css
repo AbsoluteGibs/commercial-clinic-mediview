@@ -1,0 +1,27 @@
+/*
+ * commercial-clinic-mediview
+ * Button styling
+*/
+
+
+.button, .button:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #295654;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: #FFC187;
+    transition: color 200ms ease-out;
+}
+
+/* tablet and desktop styling */
+@media only screen and (min-width: 600px) {
+    .button {
+        max-width: 18rem;
+    }
+}
