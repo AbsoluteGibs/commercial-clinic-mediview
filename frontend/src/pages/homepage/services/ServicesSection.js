@@ -6,12 +6,11 @@
 
 import React from 'react'
 import ServiceCard from '../../../components/card/ServiceCard'
-// import ScreeningBackground from '../../../images/home_page_services_screening_bg@1x.png'
-// import TestingBackground from '../../../images/home_page_services_testing_bg@1x.png'
-// import VaccineBackground from '../../../images/home_page_services_vaccine_bg@1x.png'
 import ScreeningBackground from '../../../images/consultationroom.JPG'
 import TestingBackground from '../../../images/swab_test.jpg'
 import VaccineBackground from '../../../images/sinovac2.JPG'
+import KneeBackground from '../../../images/knee2.jpg'
+import LPABackground from '../../../images/lpa.jpg'
 
 import './ServicesSection.css'
 
@@ -53,6 +52,22 @@ export default function ServicesSection() {
                     ctaTo="/sinovac-advisory">
                     <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
                     <p>Mediview provides COVID-19 vaccination via the Sinovac Vaccine.</p>
+                </ServiceCard>
+                <ServiceCard
+                    title="Knee Osteoarthritis"
+                    backgroundSrc={KneeBackground}
+                    ctaTitle="Learn More"
+                    ctaTo="/knee-osteoarthritis">
+                    <p>Knee arthritis is a common form of arthritis that affects millions globally.</p>
+                    <p>Read more to get informed about knee arthritis .This service is available at our clinic.</p>
+                </ServiceCard>
+                <ServiceCard
+                    title="Lasting Power of Attorney"
+                    backgroundSrc={LPABackground}
+                    ctaTitle="Learn More"
+                    ctaTo="/lasting-power-of-attorney">
+                    <p>A Lasting Power of Attorney (LPA) is a legal document that is important for patients who may lose the ability to think for themselves.</p>
+                    <p>It may happen when you least expect it. Learn more about LPA here.</p>
                 </ServiceCard>
             </div>
         </section>
