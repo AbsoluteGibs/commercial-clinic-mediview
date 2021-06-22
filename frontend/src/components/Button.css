@@ -15,8 +15,8 @@
 }
 
 .button:hover {
-    color: #FFC187;
-    transition: color 200ms ease-out;
+    /* color: #FFC187;
+    transition: color 200ms ease-out; */
 }
 
 /* tablet and desktop styling */

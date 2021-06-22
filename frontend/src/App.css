@@ -93,29 +93,6 @@ ol {
   animation-name: fadeIn;
 }
 
-.article_panel_container{
-  padding: 18px 18px 18px 0px;
-  max-width: 1000px;
-}
-
-.article_panel{
-  border-radius: 12px;
-  cursor: pointer;
-  width: 100%;
-  padding: 20px;
-  background: #ffffff;
-  -webkit-box-shadow:-3px -2px 16px 0px #000000;
-  -moz-box-shadow:-3px -2px 16px 0px #000000;
-  box-shadow:-3px -2px 16px 0px #000000;
-}
-
-.article_panel:hover{
-  box-shadow: 0px 0px 25px #858585;
-  background-color: #4f73c6;
-  /* background-color: #319778; */
-  transition: 0.3s;
-}
-
 .top-padding-50{
   padding-top: 50px;
 }
@@ -137,29 +114,6 @@ tr, td{
   padding: 15px;
   border-style: groove;
   border-width: 0px 0px;
-}
-
-.operating_info{
-  display: flex;
-}
-
-.operating_info_text_content{
-  flex: 3;
-}
-
-.operating_info_map_content{
-  flex: 4;
-}
-
-.iframe-container{
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.responsive-iframe{
-  border: groove 1px;
-  flex-basis: 90%;
 }
 
 .logo-container-top{

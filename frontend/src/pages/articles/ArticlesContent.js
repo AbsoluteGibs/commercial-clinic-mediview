@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 // import axios from 'axios'
 import ArticlePreview from './ArticlesPreview'
 import ArticlesDB from './ArticlesDB'
+import './Articles.css'
 
 // TO-DO: Create database of articles - date published, author, content.
 // Articles are self-written

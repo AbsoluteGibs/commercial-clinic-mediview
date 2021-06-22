@@ -1,0 +1,22 @@
+.iframe-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .responsive-iframe{
+    border: groove 1px;
+    flex-basis: 90%;
+  }
+
+  .operating_info{
+    display: flex;
+  }
+  
+  .operating_info_text_content{
+    flex: 3;
+  }
+  
+  .operating_info_map_content{
+    flex: 4;
+  }

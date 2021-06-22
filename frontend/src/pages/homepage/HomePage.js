@@ -15,7 +15,7 @@ import './HomePage.css'
 */
 export default function HomePage() {
     return (
-        <section id="homepage">
+        <section className="animated fadeInRight" id="homepage">
             <LandingSection />
             <ServicesSection />
             <ArticlesSection />

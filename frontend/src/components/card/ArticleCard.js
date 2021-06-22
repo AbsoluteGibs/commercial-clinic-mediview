@@ -24,7 +24,7 @@ export default function ArticleCard(props) {
         <div className="article-card">
             <div className="header">
                 <h2>{props.title}</h2>
-                <span className="published-date">{props.publishedAt}</span>
+                {/* <span className="published-date">{props.publishedAt}</span> */}
             </div>
             <p className="describe">
                 {props.description}

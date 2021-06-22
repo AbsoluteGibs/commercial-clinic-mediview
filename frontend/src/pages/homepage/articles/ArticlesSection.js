@@ -13,9 +13,9 @@ import './ArticlesSection.css'
  * ArticlesSection component renders the articles section of the HomePage form ArticlesDB
  *
  * @param {object} props Component props.
- * @param {number} [props.maxArticles=4] Max no. of latest (by id) articles to show.
+ * @param {number} [props.maxArticles=3] Max no. of latest (by id) articles to show.
 */
-export default function ArticlesSection({maxArticles = 4}) {
+export default function ArticlesSection({maxArticles = 3}) {
     const shownArticles = ArticlesDB
         // sort by descending id to show latest articles first
         .sort((a1, a2) => a1.id <= a2.id)
@@ -23,10 +23,10 @@ export default function ArticlesSection({maxArticles = 4}) {
         .slice(0, Math.min(ArticlesDB.length, maxArticles));
 
     // formats dates in format DD-MM-YY into DD/MM/YYYY for rendering
-    const formatDate = (inDateStr) => {
-        const [day, month, year] = inDateStr.split("-");
-        return `${day}/${month}/20${year}`;
-    }
+    // const formatDate = (inDateStr) => {
+    //     const [day, month, year] = inDateStr.split("-");
+    //     return `${day}/${month}/20${year}`;
+    // }
 
     return (
         <section id="articles">
@@ -36,7 +36,7 @@ export default function ArticlesSection({maxArticles = 4}) {
                     shownArticles.map((a) => <ArticleCard
                         key={a.title}
                         title={a.title}
-                        publishedAt={formatDate(a.dateOfPublish)}
+                        // publishedAt={formatDate(a.dateOfPublish)}
                         description={a.shortDesc}
                         ctaTitle="Read More"
                         ctaTo={`/articles/${a.name}`}

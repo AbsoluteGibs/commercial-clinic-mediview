@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './Articles.css'
 
 function ArticlesPreview({article})
 {
@@ -14,7 +15,7 @@ function ArticlesPreview({article})
                         </div>
                         <div style={{maxWidth: '800px', display: 'inline-block', margin: '0'}}>
                             <h3 style={{paddingBottom: '30px', paddingTop: '30px'}}>{article.title}</h3>
-                            Published Date: {article.dateOfPublish}<br/>
+                            {/* Published Date: {article.dateOfPublish}<br/> */}
                             {article.shortDesc}
                         </div>
                     </div>

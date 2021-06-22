@@ -2,21 +2,20 @@
     padding-left: 20px;
     padding-top: 20px;
 
-    background-image: url(../../images/mediview_entrance_slanted_cropped.jpg);
+    /* background-image: url(../../images/mediview_entrance_slanted_cropped.jpg); */
+    background-image: url(../../images/about_us_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 1100px;
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
   }
   
   .about_us_container {
-    
-
     max-width: 640px;
-    background-color: #ffff;
+    /* background-color: #ffff;
     border-radius: 10px;
-    border: groove 1px;
+    border: groove 1px; */
   }
 
   .bg-image{

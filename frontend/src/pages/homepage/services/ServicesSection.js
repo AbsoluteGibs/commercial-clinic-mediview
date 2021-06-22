@@ -6,9 +6,12 @@
 
 import React from 'react'
 import ServiceCard from '../../../components/card/ServiceCard'
-import ScreeningBackground from '../../../images/home_page_services_screening_bg@1x.png'
-import TestingBackground from '../../../images/home_page_services_testing_bg@1x.png'
-import VaccineBackground from '../../../images/home_page_services_vaccine_bg@1x.png'
+// import ScreeningBackground from '../../../images/home_page_services_screening_bg@1x.png'
+// import TestingBackground from '../../../images/home_page_services_testing_bg@1x.png'
+// import VaccineBackground from '../../../images/home_page_services_vaccine_bg@1x.png'
+import ScreeningBackground from '../../../images/consultationroom.JPG'
+import TestingBackground from '../../../images/swab_test.jpg'
+import VaccineBackground from '../../../images/sinovac2.JPG'
 
 import './ServicesSection.css'
 
