@@ -245,12 +245,12 @@ function HealthScreening(){
         <div className="content_body animated fadeInRight">
             <h1>Health Screening</h1>
             <div className='bot-padding-30'/>
-            <p>At MEDIVIEW CLINIC & SURGERY we strive to provide affordable and tailored health screening packages.</p>
-            <p>Health screening is essential for the early detection of diseases and conditions, many of which do not produce early warning sign. Some of these can be silent killers such as heart disease, diabetes, hypertension and cancers.</p>
-            <p>Early detection and prevention of these diseases can prevent many dreaded complications which are all too familiar with.</p>
-            <p>Please take your time to assess which package is most suitable for your risk profile.</p>
-            <p>It is never too late to start health screening. Please contact us for more information.</p>
-            <p>Please fast for at least 8 hours before your health screening with only plain water allowed. For those on daily medication, please continue your medication.</p>
+            <section style={{maxWidth: '768px'}}>
+                <p>At MEDIVIEW CLINIC & SURGERY we strive to provide affordable and tailored health screening packages.</p>
+                <p>Health screening is essential for the early detection of diseases and conditions, many of which do not produce early warning sign. Some of these can be silent killers such as heart disease, diabetes, hypertension and cancers. Early detection and prevention of these diseases can prevent many dreaded complications which are all too familiar with.</p>
+                <p>Please take your time to assess which package is most suitable for your risk profile. It is never too late to start health screening. Please contact us for more information.</p>
+                <p>Please fast for at least 8 hours before your health screening with only plain water allowed. For those on daily medication, please continue your medication.</p>
+            </section>
             <div>
                 <div className='top-padding-50'/>
                 <div className='top-padding-50'/>
