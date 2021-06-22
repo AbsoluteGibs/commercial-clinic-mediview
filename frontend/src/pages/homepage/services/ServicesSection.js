@@ -67,7 +67,7 @@ export default function ServicesSection() {
                     ctaTitle="Learn More"
                     ctaTo="/lasting-power-of-attorney">
                     <p>A Lasting Power of Attorney (LPA) is a legal document that is important for patients who may lose the ability to think for themselves.</p>
-                    <p>It may happen when you least expect it. Learn more about LPA here.</p>
+                    <p>Learn more about LPA here.</p>
                 </ServiceCard>
             </div>
         </section>
