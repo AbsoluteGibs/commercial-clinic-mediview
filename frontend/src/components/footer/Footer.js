@@ -43,7 +43,6 @@ export default function Footer() {
             <section className="contact">
                 <h4>Contact</h4>
                 <p>
-                    mediviewacc@gmail.com <br/>
                     +65 6253-2351
                 </p>
             </section>

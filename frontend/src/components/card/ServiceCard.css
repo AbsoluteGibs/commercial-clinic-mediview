@@ -27,6 +27,8 @@ div.service-card div.header h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 div.service-card div.body {

@@ -57,7 +57,7 @@ export default function ServicesSection() {
                     title="Knee Osteoarthritis"
                     backgroundSrc={KneeBackground}
                     ctaTitle="Learn More"
-                    ctaTo="/knee-osteoarthritis">
+                    ctaTo="/articles/knee-osteoarthritis">
                     <p>Knee arthritis is a common form of arthritis that affects millions globally.</p>
                     <p>Read more to get informed about knee arthritis .This service is available at our clinic.</p>
                 </ServiceCard>
@@ -65,7 +65,7 @@ export default function ServicesSection() {
                     title="Lasting Power of Attorney"
                     backgroundSrc={LPABackground}
                     ctaTitle="Learn More"
-                    ctaTo="/lasting-power-of-attorney">
+                    ctaTo="/articles/lasting-power-of-attorney">
                     <p>A Lasting Power of Attorney (LPA) is a legal document that is important for patients who may lose the ability to think for themselves.</p>
                     <p>Learn more about LPA here.</p>
                 </ServiceCard>
