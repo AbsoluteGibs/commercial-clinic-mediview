@@ -19,6 +19,8 @@ export default function HomePage() {
         <section className="animated fadeInRight" id="homepage">
             <Helmet>
                 <title>Homepage | Mediview Clinic & Surgery</title>
+                <meta charSet="utf-8"/>
+                <meta name="description" content="Mediview Clinic & Surgery is a trusted medical clinic in Singapore that provides quality and professional healthcare to you and your family since 1994."/>
             </Helmet>
             <LandingSection />
             <ServicesSection />
