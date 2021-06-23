@@ -47,6 +47,7 @@ div.service-card div.body {
     /* filter: blur(2px) brightness(45%);
     -webkit-filter: blur(2px) brightness(45%); */
     margin: -2px 0 0 -2px;
+    width: auto;
 }
 
 /* .dim{

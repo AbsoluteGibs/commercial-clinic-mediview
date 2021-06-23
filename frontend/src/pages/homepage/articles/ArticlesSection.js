@@ -38,7 +38,7 @@ export default function ArticlesSection({maxArticles = 3}) {
                         title={a.title}
                         // publishedAt={formatDate(a.dateOfPublish)}
                         description={a.shortDesc}
-                        ctaTitle="Read More"
+                        ctaTitle="Get Informed"
                         ctaTo={`/articles/${a.name}`}
                     />)
                 }

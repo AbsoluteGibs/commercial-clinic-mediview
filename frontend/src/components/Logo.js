@@ -5,7 +5,7 @@ function Logo()
 {
     return(
         //<img className="logo" src={require('../mediview_logo.jpg')} style={{textAlign: 'left'}} alt="Mediview logo"/>
-        <Link to="/"><div className="logo-bg-image"></div></Link>
+        <Link to="/"><div title="Mediview Clinic & Surgery Pte Ltd. Logo" className="logo-bg-image"></div></Link>
     )
 }
 

@@ -23,13 +23,13 @@ export default function Footer() {
                     <h3>Mediview Clinic & Surgery</h3>
                 </div>
 
-                <p>
-                    <Link to="/about-us">About Us</Link>
-                    <Link to="/articles">Articles</Link>
-                    <Link to="/contact-us">Contact Us</Link>
-                    <Link to="/covid-services">COVID Services</Link>
-                    <Link to="/health-screening">Screening</Link>
-                </p>
+                <div>
+                    <p><Link to="/about-us">About Us</Link></p>
+                    <p><Link to="/articles">Articles</Link></p>
+                    <p><Link to="/contact-us">Contact Us</Link></p>
+                    <p><Link to="/covid-services">COVID Services</Link></p>
+                    <p><Link to="/health-screening">Screening</Link></p>
+                </div>
             </section>
             
             <section className="address">

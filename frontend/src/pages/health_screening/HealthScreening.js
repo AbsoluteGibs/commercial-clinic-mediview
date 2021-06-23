@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Helmet, HelmetProvider} from 'react-helmet-async'
 
 function ENContent(){
     return(
@@ -243,29 +244,36 @@ function HealthScreening(){
 
     return(
         <div className="content_body animated fadeInRight">
-            <h1>Health Screening</h1>
-            <div className='bot-padding-30'/>
-            <section style={{maxWidth: '768px'}}>
-                <p>At MEDIVIEW CLINIC & SURGERY we strive to provide affordable and tailored health screening packages.</p>
-                <p>Health screening is essential for the early detection of diseases and conditions, many of which do not produce early warning sign. Some of these can be silent killers such as heart disease, diabetes, hypertension and cancers. Early detection and prevention of these diseases can prevent many dreaded complications which are all too familiar with.</p>
-                <p>Please take your time to assess which package is most suitable for your risk profile. It is never too late to start health screening. Please contact us for more information.</p>
-                <p>Please fast for at least 8 hours before your health screening with only plain water allowed. For those on daily medication, please continue your medication.</p>
-            </section>
-            <div>
-                <div className='top-padding-50'/>
-                <div className='top-padding-50'/>
-                <h2>Available Packages</h2>
+            <HelmetProvider>
+                <Helmet>
+                    <meta charSet="utf-8"/>
+                    <title>Health Screening</title>
+                    <meta name="description" content="Available health screening packages at different price points provided by Medisave Clinic"/>
+                </Helmet>
+                <h1>Health Screening</h1>
                 <div className='bot-padding-30'/>
+                <section style={{maxWidth: '768px'}}>
+                    <p>At MEDIVIEW CLINIC & SURGERY we strive to provide affordable and tailored health screening packages.</p>
+                    <p>Health screening is essential for the early detection of diseases and conditions, many of which do not produce early warning sign. Some of these can be silent killers such as heart disease, diabetes, hypertension and cancers. Early detection and prevention of these diseases can prevent many dreaded complications which are all too familiar with.</p>
+                    <p>Please take your time to assess which package is most suitable for your risk profile. It is never too late to start health screening. Please contact us for more information.</p>
+                    <p>Please fast for at least 8 hours before your health screening with only plain water allowed. For those on daily medication, please continue your medication.</p>
+                </section>
+                <div>
+                    <div className='top-padding-50'/>
+                    <div className='top-padding-50'/>
+                    <h2>Available Packages</h2>
+                    <div className='bot-padding-30'/>
 
-                {/* language toggle */}
-                {/* react having issues :/ */}
+                    {/* language toggle */}
+                    {/* react having issues :/ */}
 
-                <div style={{fontSize: '1.2em', textAlign: 'right'}}>Language: {languageToggle ? '中文' : 'English'}<label style={{margin: '5px'}} className='switch'><input id="lang_slider" type='checkbox' defaultChecked={languageToggle} onChange={sliderUpdate}/><span className='slider round'></span></label></div>
+                    <div style={{fontSize: '1.2em', textAlign: 'right'}}>Language: {languageToggle ? '中文' : 'English'}<label style={{margin: '5px'}} className='switch'><input id="lang_slider" type='checkbox' defaultChecked={languageToggle} onChange={sliderUpdate}/><span className='slider round'></span></label></div>
 
-                <div className={defaultState}>{ENContent()}</div>
-                <div className={otherState}>{CNContent()}</div>
-            </div>
-            <div className='bot-padding-30'/>
+                    <div className={defaultState}>{ENContent()}</div>
+                    <div className={otherState}>{CNContent()}</div>
+                </div>
+                <div className='bot-padding-30'/>
+            </HelmetProvider>
         </div>
     );
 }
