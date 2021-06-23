@@ -15,36 +15,38 @@ import HomePage from './pages/homepage/HomePage'
 import Footer from './components/footer/Footer'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {HelmetProvider} from 'react-helmet-async'
 
 function App() {
     return (
         <div id="root">
-            <Router>
-                <header>
-                    <div className="logo-container-top">
-                        <div className="logo-container">
-                            <Logo/>
+            <HelmetProvider>
+                <Router>
+                    <header>
+                        <div className="logo-container-top">
+                            <div className="logo-container">
+                                <Logo/>
+                            </div>
                         </div>
-                    </div>
-                    <Navbar/>
-                </header>
+                        <Navbar/>
+                    </header>
 
-                <main>
-                    {/* Where content is generated depending on page clicked, aka website body */}
-                    <Switch>
-                        <Route path="/articles" exact component={Articles}/>
-                        <Route path="/articles/:fullArticle" component={Article}/>
-                        <Route path="/about-us" exact component={About}/>
-                        <Route path="/contact-us" exact component={ContactUs}/>
-                        <Route path="/covid-services" exact component={CovidServices}/>
-                        <Route path="/health-screening" exact component={HealthScreening}/>
-                        <Route path="/sinovac-advisory" exact component={SinovacAdvisory}/>
-                        <Route path="/" exact component={HomePage}/>
-                    </Switch>
-                </main>
-
-                <Footer />
-            </Router>
+                    <main>
+                        {/* Where content is generated depending on page clicked, aka website body */}
+                        <Switch>
+                            <Route path="/articles" exact component={Articles}/>
+                            <Route path="/articles/:fullArticle" component={Article}/>
+                            <Route path="/about-us" exact component={About}/>
+                            <Route path="/contact-us" exact component={ContactUs}/>
+                            <Route path="/covid-services" exact component={CovidServices}/>
+                            <Route path="/health-screening" exact component={HealthScreening}/>
+                            <Route path="/sinovac-advisory" exact component={SinovacAdvisory}/>
+                            <Route path="/" exact component={HomePage}/>
+                        </Switch>
+                    </main>
+                    <Footer />
+                </Router>
+            </HelmetProvider>
         </div>
     );
 }

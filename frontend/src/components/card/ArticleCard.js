@@ -5,7 +5,6 @@
 
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {Helmet, HelmetProvider} from 'react-helmet-async'
 
 import './ArticleCard.css'
 import '../Button.css'
@@ -23,21 +22,14 @@ import '../Button.css'
 export default function ArticleCard(props) {
     return (
         <div className="article-card">
-            <HelmetProvider>
-                <Helmet>
-                    <meta charSet="utf-8"/>
-                    <title>{`${props.title}`}</title>
-                    <meta name="description" content={props.description}/>
-                </Helmet>
-                <div className="header">
-                    <h2>{props.title}</h2>
-                    {/* <span className="published-date">{props.publishedAt}</span> */}
-                </div>
-                <p className="describe">
-                    {props.description}
-                </p>
-                <Link className="button" to={props.ctaTo}>{props.ctaTitle}</Link>
-            </HelmetProvider>
+            <div className="header">
+                <h2>{props.title}</h2>
+                {/* <span className="published-date">{props.publishedAt}</span> */}
+            </div>
+            <p className="describe">
+                {props.description}
+            </p>
+            <Link className="button" to={props.ctaTo}>{props.ctaTitle}</Link>
         </div>
     );
 }

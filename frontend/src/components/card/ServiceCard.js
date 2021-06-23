@@ -5,7 +5,7 @@
 
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {Helmet, HelmetProvider} from 'react-helmet-async'
+
 
 import './ServiceCard.css'
 import '../Button.css'
@@ -24,24 +24,16 @@ import '../Button.css'
 export default function ServiceCard(props) {
     return (
         <div className="service-card">
-            <HelmetProvider>
-                <Helmet>
-                    <meta charSet="utf-8"/>
-                    <title>{`${props.title}`}</title>
-                    <meta name="description" content={props.shortDesc}/>
-                </Helmet>
-                <div className="header">
-                    <div className="image-container">
-                        <img className="blur dim" src={props.backgroundSrc} alt="background" />
-                    </div>
-                    <h2 className="title">{props.title}</h2>
+            <div className="header">
+                <div className="image-container">
+                    <img className="blur dim" src={props.backgroundSrc} alt="background" />
                 </div>
-                <div className="body">
-                    {props.children}
-                </div>
-                <Link className="button" to={props.ctaTo}>{props.ctaTitle}</Link>
-            </HelmetProvider>
-            
+                <h2 className="title">{props.title}</h2>
+            </div>
+            <div className="body">
+                {props.children}
+            </div>
+            <Link className="button" to={props.ctaTo}>{props.ctaTitle}</Link>
         </div>
     )
 }

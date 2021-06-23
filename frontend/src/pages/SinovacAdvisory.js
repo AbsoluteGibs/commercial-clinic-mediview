@@ -6,8 +6,8 @@ function SinovacAdvisory()
     return(
         <div className="content_body animated fadeInRight" style={{maxWidth: '768px'}}>
             <Helmet>
-                <meta charSet="utf-8"/>
                 <title>Sinovac Advisory and Services</title>
+                <meta charSet="utf-8"/>
                 <meta name="description" content="Sinovac provides a set of benefits, disadvantages and/or side effects. This article serves to inform the public about the Sinovac vaccine."/>
             </Helmet>
             <section>
