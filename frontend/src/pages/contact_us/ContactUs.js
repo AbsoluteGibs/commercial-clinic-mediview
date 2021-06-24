@@ -36,6 +36,7 @@ function ContactUs(){
                             <h2>Email</h2>
                             <div><a href="mailto:mediviewacc@gmail.com">mediviewacc@gmail.com</a></div>
                         </div> */}
+                        <div className="bot-padding-30 top-padding-50"/>
                     </div>
                 </div>
                 <div className="operating_info_map_content iframe-container">

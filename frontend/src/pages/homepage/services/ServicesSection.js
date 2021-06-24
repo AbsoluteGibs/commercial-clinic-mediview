@@ -54,7 +54,7 @@ export default function ServicesSection() {
                     ctaTitle="Check Service"
                     ctaTo="/sinovac-advisory">
                     <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
-                    <p>Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine.</p>
+                    <p>Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine. <a style={{textDecoration: 'none', color: 'black'}} href="https://forms.gle/9MBvJZyvdc4Uck3A8" target="_blank" rel="noopener noreferrer"><b><u>Register</u></b></a> for vaccine.</p>
                 </ServiceCard>
                 <ServiceCard
                     title="Knee Osteoarthritis"
