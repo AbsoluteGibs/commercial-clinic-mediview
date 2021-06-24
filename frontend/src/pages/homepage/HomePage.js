@@ -20,7 +20,7 @@ export default function HomePage() {
             <Helmet>
                 <title>Homepage | Mediview Clinic & Surgery</title>
                 <meta charSet="utf-8"/>
-                <meta name="description" content="Mediview Clinic & Surgery is a trusted medical clinic in Singapore that provides quality and professional healthcare to you and your family since 1994."/>
+                <meta name="description" content="Mediview Clinic & Surgery is a trusted medical clinic in Singapore that provides quality and professional healthcare to you and your family since 1994. Our clinic provides a range of services from normal consultations to surgery-related services"/>
             </Helmet>
             <LandingSection />
             <ServicesSection />
