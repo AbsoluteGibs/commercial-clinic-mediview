@@ -30,6 +30,15 @@ export default function ServicesSection() {
 
             <div className="card-deck">
                 <ServiceCard
+                    title="Sinovac Vaccine"
+                    shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine."
+                    backgroundSrc={VaccineBackground}
+                    ctaTitle="Check Service"
+                    ctaTo="/sinovac-advisory">
+                    <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
+                    <p>Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine. <a style={{textDecoration: 'none', color: 'black'}} href="https://forms.gle/9MBvJZyvdc4Uck3A8" target="_blank" rel="noopener noreferrer"><b><u>Register</u></b></a> for vaccine.</p>
+                </ServiceCard>
+                <ServiceCard
                     title="Health Screening" 
                     shortDesc="Health screening is essential for early detection of diseases and conditions. Mediview provides affordable & tailored health screening packages." 
                     backgroundSrc={ScreeningBackground}
@@ -46,15 +55,6 @@ export default function ServicesSection() {
                     ctaTo="/covid-services">
                     <p>Pre-event testing is required for large scale events such as trade shows and weddings.</p>
                     <p>Mediview Clinic provides ART tests for events and PCR tests for individuals going overseas.</p>
-                </ServiceCard>
-                <ServiceCard
-                    title="Sinovac Vaccine"
-                    shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine."
-                    backgroundSrc={VaccineBackground}
-                    ctaTitle="Check Service"
-                    ctaTo="/sinovac-advisory">
-                    <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
-                    <p>Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine. <a style={{textDecoration: 'none', color: 'black'}} href="https://forms.gle/9MBvJZyvdc4Uck3A8" target="_blank" rel="noopener noreferrer"><b><u>Register</u></b></a> for vaccine.</p>
                 </ServiceCard>
                 <ServiceCard
                     title="Knee Osteoarthritis"
