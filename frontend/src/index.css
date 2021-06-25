@@ -16,6 +16,6 @@ code {
 }
 
 /* code below used for finding div bugs */
-/* * {
+* {
   outline: 1px solid red;
-} */
+}

@@ -21,6 +21,7 @@ div.service-card div.header img {
 }
 
 div.service-card div.header h2 {
+    width: 12rem;
     text-align: center;
     position: absolute;
     top: 50%;

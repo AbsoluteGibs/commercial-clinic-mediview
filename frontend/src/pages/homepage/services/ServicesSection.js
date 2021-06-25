@@ -30,7 +30,7 @@ export default function ServicesSection() {
 
             <div className="card-deck">
                 <ServiceCard
-                    title="Sinovac Vaccine (SINOVAC科兴)"
+                    title="Sinovac Vaccine (SINOVAC 科兴)"
                     shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine."
                     backgroundSrc={VaccineBackground}
                     ctaTitle="Check Service"
