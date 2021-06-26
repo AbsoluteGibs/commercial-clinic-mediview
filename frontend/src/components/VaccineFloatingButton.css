@@ -1,0 +1,29 @@
+.float{
+    position:fixed;
+	width:16em;
+	height:5em;
+	bottom:2em;
+	right:2em;
+	background-color: var(--secondary-color);
+	border-radius:30px;
+	text-align:center;
+	-webkit-box-shadow: -4px 6px 11px 5px rgba(153,153,153,0.65); 
+    box-shadow: -4px 6px 11px 5px rgba(153,153,153,0.65);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--font-light-color)
+}
+
+@media screen and (max-width: 768px) {
+    a {font-weight: 500; font-size: 0.8em;}
+    .float {width: 10em;}
+}

@@ -11,5 +11,5 @@ section#homepage {
     padding-bottom: 8vh;
     padding-left: 10vw;
     padding-right: 10vw; 
-    background-color: #F6F6F6;
+    background-color: var(--body-background-color);
 }

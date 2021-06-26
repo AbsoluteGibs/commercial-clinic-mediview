@@ -20,3 +20,11 @@
     /* background-color: #319778; */
     transition: 0.3s;
   }
+
+  .no_text_decor{
+    color: var(--font-dark-color);
+  }
+  
+  .no_text_decor:hover{
+    color: var(--font-light-color);
+  }

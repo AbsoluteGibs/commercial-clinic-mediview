@@ -1,8 +1,10 @@
 import React from 'react'
 import './App.css'
+import './components/VaccineFloatingButton.css'
 import Navbar from './components/navbar/Navbar'
 import Logo from './components/Logo'
-
+import VaccineFloatingButton from './components/VaccineFloatingButton'
+import Footer from './components/footer/Footer'
 
 import About from './pages/about_us/About'
 import Article from './pages/articles/Article'
@@ -12,7 +14,6 @@ import CovidServices from './pages/covid_services/CovidServices'
 import HealthScreening from './pages/health_screening/HealthScreening'
 import SinovacAdvisory from './pages/SinovacAdvisory'
 import HomePage from './pages/homepage/HomePage'
-import Footer from './components/footer/Footer'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {HelmetProvider} from 'react-helmet-async'
@@ -44,6 +45,7 @@ function App() {
                             <Route path="/" exact component={HomePage}/>
                         </Switch>
                     </main>
+                    <VaccineFloatingButton/>
                     <Footer />
                 </Router>
             </HelmetProvider>

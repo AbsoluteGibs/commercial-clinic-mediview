@@ -1,8 +1,7 @@
 #navbar {
-	background: #315097;
-	color: #FFF;
+	background: var(--secondary-color);
+	color: var(--font-light-color);
 	height: 80px;
-    border-color: white;
     border-width: 2px;
 	width: 100%;
 }
@@ -24,7 +23,7 @@
 	line-height: 80px;
 	padding: 0 14px;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: var(--font-light-color);
 	font-size: 19px;
 	font-weight: 600;
 }
@@ -35,8 +34,8 @@
 }
 
 #navbar li a:hover {
-	color: #315097;
-	background: #F2F2F2;
+	color: var(--secondary-color);
+	background: var(--font-light-color);
 	transition: background 0.3s ease;
 }
 
@@ -65,7 +64,7 @@
 	height: auto;
 	overflow: hidden;
 	width: 170px;
-	background: #444444;
+	background: var(--font-dark-color);
 	position: absolute;
 	z-index: 99;
 	display: none;
@@ -75,25 +74,25 @@
 	width: 100%;
 }
 #navbar ul.sub-navbars a {
-	color: #FFFFFF;
+	color: var(--font-light-color);
 	font-size: 18px;
 }
 #navbar li:hover ul.sub-navbars {
 	display: block
 }
 #navbar ul.sub-navbars a:hover{
-	background: #F2F2F2;
-	color: #444444;
+	background: var(--font-light-color);
+	color: var(--font-dark-color);
 }
 @media screen and (max-width: 800px){
 	#navbar {position:relative}
-	#navbar ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#navbar ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none; opacity: 0.98;}
 	#navbar ul.sub-navbars {width:100%;position:static;}
 	#navbar ul.sub-navbars a {padding-left:30px;}
 	#navbar li {display:block;float:none;width:auto;}
 	#navbar input, #navbar label {position:absolute;top:0;left:0;display:block}
 	#navbar input {z-index:4}
-	#navbar input:checked + label {color:white}
+	#navbar input:checked + label {color:var(--font-light-color)}
 	#navbar input:checked + label:before {content:"\00d7"}
 	#navbar input:checked ~ ul {display:block}
 }

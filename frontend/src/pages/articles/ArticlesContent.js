@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React, {lazy, Suspense, useState, useEffect} from 'react'
 // import axios from 'axios'
-import ArticlePreview from './ArticlesPreview'
+// import ArticlePreview from './ArticlesPreview'
 import ArticlesDB from './ArticlesDB'
 import { Helmet } from 'react-helmet-async'
 
 import './Articles.css'
+
+const ArticlePreview = lazy(() => import('./ArticlesPreview'))
 
 // TO-DO: Create database of articles - date published, author, content.
 // Articles are self-written
@@ -28,7 +30,7 @@ function Articles(){
                 <meta name="description" content="List of articles written from Mediview Clinic"/>
             </Helmet>
             <h1 style={{paddingBottom: '50px'}}>Articles</h1>
-            {articlesDB.map(article => <div key={article.id} className="article_panel_container"><div><ArticlePreview article={article}/></div></div>)}
+            {articlesDB.map(article => <div key={article.id} className="article_panel_container"><div><Suspense fallback={<div>Loading...</div>}><ArticlePreview article={article}/></Suspense></div></div>)}
         </div>
     );
 }

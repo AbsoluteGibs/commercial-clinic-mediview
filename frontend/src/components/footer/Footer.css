@@ -10,7 +10,7 @@ footer {
     grid-column-gap: 4vw;
     justify-content: space-evenly;
     color: white;
-    background-color: #295554;
+    background-color: var(--primary-color);
     
     padding-top: 8vh;
     padding-bottom: 6vh;

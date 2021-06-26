@@ -5,9 +5,9 @@
 
 
 .button, .button:visited {
-    color: white;
+    color: var(--font-light-color);
     text-decoration: none;
-    background-color: #295654;
+    background-color: var(--primary-color);
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;

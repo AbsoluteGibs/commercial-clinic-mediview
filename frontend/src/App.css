@@ -101,14 +101,6 @@ ol {
   padding-bottom: 30px;
 }
 
-.no_text_decor{
-  color: #444;
-}
-
-.no_text_decor:hover{
-  color: #fff;
-}
-
 
 tr, td{
   padding: 15px;
@@ -117,7 +109,7 @@ tr, td{
 }
 
 .logo-container-top{
-  background-color: #318397;
+  background-color: var(--logo-div-color);
   width: 100%;
 }
 
@@ -147,8 +139,6 @@ h2, h3{
 @media screen and (max-width: 768px) {
   #primary { width:67% }
   #secondary { width:100%; margin:0; border:none; }
-  .operating_info {flex-direction: column;}
-  
 }
 
 /*  slider buttons */
