@@ -9,6 +9,7 @@
 	text-align:center;
 	-webkit-box-shadow: -4px 6px 11px 5px rgba(153,153,153,0.65); 
     box-shadow: -4px 6px 11px 5px rgba(153,153,153,0.65);
+    z-index: 9999;
 }
 
 .flex{
