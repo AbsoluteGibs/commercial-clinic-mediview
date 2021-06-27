@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import './components/VaccineFloatingButton.css'
+import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/navbar/Navbar'
 import Logo from './components/Logo'
 import VaccineFloatingButton from './components/VaccineFloatingButton'
@@ -31,6 +32,8 @@ function App() {
                         </div>
                         <Navbar/>
                     </header>
+
+                    <ScrollToTop/>
 
                     <main>
                         {/* Where content is generated depending on page clicked, aka website body */}
