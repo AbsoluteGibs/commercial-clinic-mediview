@@ -40,7 +40,7 @@ function ContactUs(){
                     </div>
                 </div>
                 <div className="operating_info_map_content iframe-container">
-                    <iframe className="responsive-iframe" title="Google Maps Location" src={mapsUrl} allowFullScreen="" loading="lazy"></iframe>
+                    <iframe className="responsive-iframe box-shadow" title="Google Maps Location" src={mapsUrl} allowFullScreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <div className="bot-padding-30 top-padding-50"/>

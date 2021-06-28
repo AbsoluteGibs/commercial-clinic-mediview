@@ -42,7 +42,7 @@ function Article({match})
         if('htmlContentAlt' in article)
         {
             return(
-                <div className="content_body animated fadeIn" key={article.id} style={{border: 'solid 1px', margin: '12px'}}>
+                <div className="content_body  animated fadeIn" key={article.id}>
                     <Helmet>
                         <title>{`${article.title} | Mediview Clinic & Surgery`}</title>
                         <meta charSet="utf-8"/>
@@ -58,7 +58,7 @@ function Article({match})
 
         else{
             return(
-                <div className="content_body animated fadeIn" key={article.id} style={{border: 'solid 1px', margin: '12px'}}>
+                <div className="content_body box-shadow animated fadeIn" key={article.id}>
                     <Helmet>
                         <title>{`${article.title} | Mediview Clinic & Surgery`}</title>
                         <meta charSet="utf-8"/>

@@ -9,7 +9,7 @@ import ServiceCard from '../../../components/card/ServiceCard'
 import ScreeningBackground from '../../../images/consultationroom.JPG'
 import TestingBackground from '../../../images/swab_test.jpg'
 import VaccineBackground from '../../../images/sinovac2.JPG'
-import KneeBackground from '../../../images/knee.jpg'
+import KneeBackground from '../../../images/knee2.jpg'
 import LPABackground from '../../../images/lpa.jpg'
 
 import './ServicesSection.css'

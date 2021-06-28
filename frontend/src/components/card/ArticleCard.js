@@ -21,7 +21,7 @@ import '../Button.css'
 */
 export default function ArticleCard(props) {
     return (
-        <div className="article-card">
+        <div className="article-card box-shadow">
             <div className="header">
                 <h2>{props.title}</h2>
                 {/* <span className="published-date">{props.publishedAt}</span> */}

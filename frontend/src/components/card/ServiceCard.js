@@ -23,10 +23,10 @@ import '../Button.css'
 
 export default function ServiceCard(props) {
     return (
-        <div className="service-card">
+        <div className="service-card box-shadow">
             <div className="header">
                 <div className="image-container">
-                    <img className="blur dim" src={props.backgroundSrc} alt="background" />
+                    <img className="dim" src={props.backgroundSrc} alt="background" />
                 </div>
                 <h2 className="title">{props.title}</h2>
             </div>

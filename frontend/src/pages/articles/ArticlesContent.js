@@ -30,7 +30,18 @@ function Articles(){
                 <meta name="description" content="List of articles written from Mediview Clinic"/>
             </Helmet>
             <h1 style={{paddingBottom: '50px'}}>Articles</h1>
-            {articlesDB.map(article => <div key={article.id} className="article_panel_container"><div><Suspense fallback={<div>Loading...</div>}><ArticlePreview article={article}/></Suspense></div></div>)}
+            {
+                articlesDB.map(article => 
+                <div key={article.id} className="article_panel_container">
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <ArticlePreview
+                        name={article.name}
+                        thumbnail={article.thumbnail}
+                        title={article.title}
+                        shortDesc={article.shortDesc}/>
+                    </Suspense>
+                </div>)
+            }
         </div>
     );
 }
