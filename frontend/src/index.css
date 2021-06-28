@@ -26,6 +26,12 @@ code {
     monospace;
 }
 
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
 /* code below used for finding div bugs */
 /* * {
   outline: 1px solid red;
