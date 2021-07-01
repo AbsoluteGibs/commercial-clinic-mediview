@@ -1,0 +1,9 @@
+.error-page{
+    text-align: center;
+    padding-top: 7em;
+    padding-bottom: 18em;
+}
+
+h1{
+    color: var(--font-dark-color)
+}

@@ -18,6 +18,7 @@ import HomePage from './pages/homepage/HomePage'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {HelmetProvider} from 'react-helmet-async'
+import ErrorPage from './components/ErrorPage'
 
 function App() {
     return (
@@ -39,13 +40,14 @@ function App() {
                         {/* Where content is generated depending on page clicked, aka website body */}
                         <Switch>
                             <Route path="/articles" exact component={Articles}/>
-                            <Route path="/articles/:fullArticle" component={Article}/>
+                            <Route path="/articles/:fullArticle" exact component={Article}/>
                             <Route path="/about-us" exact component={About}/>
                             <Route path="/contact-us" exact component={ContactUs}/>
                             <Route path="/covid-services" exact component={CovidServices}/>
                             <Route path="/health-screening" exact component={HealthScreening}/>
                             <Route path="/sinovac-advisory" exact component={SinovacAdvisory}/>
                             <Route path="/" exact component={HomePage}/>
+                            <Route path="*" component={ErrorPage} />
                         </Switch>
                     </main>
                     <VaccineFloatingButton/>
