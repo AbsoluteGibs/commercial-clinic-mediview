@@ -32,7 +32,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="Sinovac Vaccine (SINOVAC 科兴)"
                     shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine."
-                    dimLevel="light-dim"
+                    // dimLevel="light-dim"
                     backgroundSrc={VaccineBackground}
                     ctaTitle="Check Service"
                     ctaTo="/sinovac-advisory">
@@ -42,7 +42,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="Health Screening" 
                     shortDesc="Health screening is essential for early detection of diseases and conditions. Mediview provides affordable & tailored health screening packages." 
-                    dimLevel="light-dim"
+                    // dimLevel="light-dim"
                     backgroundSrc={ScreeningBackground}
                     ctaTitle="Check Service"
                     ctaTo="/health-screening">
