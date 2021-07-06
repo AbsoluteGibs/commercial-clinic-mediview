@@ -32,6 +32,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="Sinovac Vaccine (SINOVAC 科兴)"
                     shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine."
+                    dimLevel="light-dim"
                     backgroundSrc={VaccineBackground}
                     ctaTitle="Check Service"
                     ctaTo="/sinovac-advisory">
@@ -41,6 +42,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="Health Screening" 
                     shortDesc="Health screening is essential for early detection of diseases and conditions. Mediview provides affordable & tailored health screening packages." 
+                    dimLevel="light-dim"
                     backgroundSrc={ScreeningBackground}
                     ctaTitle="Check Service"
                     ctaTo="/health-screening">
@@ -50,6 +52,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="COVID-19 Testing"
                     shortDesc="Pre-event testing is required for large scale events such as trade shows and weddings. Mediview Clinic provides ART tests for events and PCR tests for individuals going overseas."
+                    dimLevel="med-dim"
                     backgroundSrc={TestingBackground}
                     ctaTitle="Check Service"
                     ctaTo="/covid-services">
@@ -59,6 +62,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="Knee Osteoarthritis"
                     shortDesc="Knee arthritis is a common form of arthritis that affects millions globally."
+                    dimLevel="med-dim"
                     backgroundSrc={KneeBackground}
                     ctaTitle="Check Service"
                     ctaTo="/articles/knee-osteoarthritis">
@@ -68,6 +72,7 @@ export default function ServicesSection() {
                 <ServiceCard
                     title="Lasting Power of Attorney"
                     shortDesc="A Lasting Power of Attorney (LPA) is a legal document that is important for patients who may lose the ability to think for themselves."
+                    dimLevel="heavy-dim"
                     backgroundSrc={LPABackground}
                     ctaTitle="Check Service"
                     ctaTo="/articles/lasting-power-of-attorney">

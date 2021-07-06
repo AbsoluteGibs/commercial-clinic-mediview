@@ -26,7 +26,7 @@ export default function ServiceCard(props) {
         <div className="service-card box-shadow">
             <div className="header">
                 <div className="image-container">
-                    <img className="dim" src={props.backgroundSrc} alt="background" />
+                    <img className={props.dimLevel || ""} src={props.backgroundSrc} alt="background" />
                 </div>
                 <h2 className="title">{props.title}</h2>
             </div>

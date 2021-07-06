@@ -29,7 +29,7 @@ div.service-card div.header h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFF;
+    color: var(--font-light-color);
     font-weight: 500;
     -webkit-text-stroke-width: thin;
     -webkit-text-stroke-color: var(--font-dark-color);
@@ -53,7 +53,17 @@ div.service-card div.body {
     width: auto; */
 }
 
-.dim{
-    filter: brightness(65%);
-    -webkit-filter: brightness(65%);
+.light-dim{
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.med-dim{
+    filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+}
+
+.heavy-dim{
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
 }
