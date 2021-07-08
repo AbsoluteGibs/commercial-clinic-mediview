@@ -1,5 +1,6 @@
 :root{
-    --panel-border-radius: 13px;
+    --panel-border-radius: 18px 0px 0px 18px;
+    --panel-border-mobile-radius: 18px 18px 0px 0px;
 }
 
 .article_panel_container{
@@ -37,7 +38,7 @@
 
   .flex-container .image-container img{
       width: 100%;
-      border-radius: var(--panel-border-radius) 0px 0px var(--panel-border-radius);
+      border-radius: var(--panel-border-radius);
       float: left;
   }
 
@@ -50,4 +51,6 @@
 @media only screen and (max-width: 768px) {
     .flex-container {flex-direction: column;}
     .flex-container .text-container {padding: 0.7em;}
+    .article_panel {border-radius: var(--panel-border-mobile-radius);}
+    .flex-container .image-container img{ border-radius: var(--panel-border-mobile-radius); }
 }

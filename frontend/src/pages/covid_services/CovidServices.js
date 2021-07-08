@@ -19,10 +19,12 @@ function CovidServices()
                 <meta name="description" content="Due to the pandemic, Mediview Clinic now offers a range of COVID-19 services and tests, especially for large-scale events like performances and tours."/>
             </Helmet>
             <h1 style={{paddingBottom: '50px'}}>COVID-19 Services</h1>
-            <Accordion title="Pre-Departure PCR Swab Test" content={<PCRSwabTest/>}/>
-            <Accordion title="ART Test for Individuals" content={<ARTIndividual/>} />
-            <Accordion title="Pre-Event ART" content={<PreEventART/>} />
-            <Accordion title="ART for Weddings" content={<ARTWeddings/>} />
+            <section>
+                <Accordion title="Pre-Departure PCR Swab Test" content={<PCRSwabTest/>}/>
+                <Accordion title="ART Test for Individuals" content={<ARTIndividual/>} />
+                <Accordion title="Pre-Event ART" content={<PreEventART/>} />
+                <Accordion title="ART for Weddings" content={<ARTWeddings/>} />
+            </section>
             <div className="top-padding-50"/><div className="top-padding-50"/>
         </div>
     );

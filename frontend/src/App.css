@@ -10,8 +10,8 @@ ol {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 20px;
 }
 
@@ -130,9 +130,11 @@ h2, h3{
   background-position: center;
 }
 
+#primary {width: 70vw;}
+
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 768px) {
-  #primary { width:67% }
+  #primary {width: 100vw;}
   #secondary { width:100%; margin:0; border:none; }
 }
 

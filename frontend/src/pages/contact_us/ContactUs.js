@@ -8,7 +8,7 @@ const mapsUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3687
 
 function ContactUs(){
     return(
-        <div className="content_body animated fadeInRight" id="primary">
+        <div className="content_body animated fadeInRight">
             <Helmet>
                 <title>Contact Us | Mediview Clinic & Surgery</title>
                 <meta charSet="utf-8"/>
