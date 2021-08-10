@@ -32,7 +32,7 @@ function SinovacAdvisory()
                 </p>
             </section>
             <div className="top-padding-50" />
-            <section>
+            {/* <section>
                 <h2>
                     Sinovac Registration
                 </h2>
@@ -42,7 +42,7 @@ function SinovacAdvisory()
                 <p>
                     Please contact us if there are technical issues revolving around the registration link.
                 </p>
-            </section>
+            </section> */}
         </div>
     )
 }
