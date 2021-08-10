@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css'
-import './components/VaccineFloatingButton.css'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/navbar/Navbar'
 import Logo from './components/Logo'
-import VaccineFloatingButton from './components/VaccineFloatingButton'
+// import SinovacFloatingButton from './components/SinovacFloatingButton'
+import SinopharmFloatingButton from './components/SinopharmFloatingButton'
 import Footer from './components/footer/Footer'
 
 import About from './pages/about_us/About'
@@ -50,7 +50,8 @@ function App() {
                             <Route path="*" component={ErrorPage} />
                         </Switch>
                     </main>
-                    <VaccineFloatingButton/>
+                    {/* <SinovacFloatingButton/> */}
+                    <SinopharmFloatingButton/>
                     <Footer />
                 </Router>
             </HelmetProvider>

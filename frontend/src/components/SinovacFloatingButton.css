@@ -1,4 +1,4 @@
-.float{
+.sinovacFloat{
     position:fixed;
 	width:16em;
 	height:5em;
@@ -26,5 +26,5 @@ a{
 
 @media screen and (max-width: 768px) {
     a {font-weight: 500; font-size: 0.8em;}
-    .float {width: 10em;}
+    .float {width: 8em;}
 }
