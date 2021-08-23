@@ -8,9 +8,10 @@ import React from 'react'
 import ServiceCard from '../../../components/card/ServiceCard'
 import ScreeningBackground from '../../../images/consultationroom.JPG'
 import TestingBackground from '../../../images/swab_test.jpg'
-import VaccineBackground from '../../../images/sinovac2.JPG'
+import SinovacVaccineBackground from '../../../images/sinovac2.JPG'
 import KneeBackground from '../../../images/knee2.jpg'
 import LPABackground from '../../../images/lpa.jpg'
+import SinopharmVaccineBackground from '../../../images/sinopharm.jpg'
 
 import './ServicesSection.css'
 
@@ -33,7 +34,7 @@ export default function ServicesSection() {
                     title="Sinovac Vaccine (SINOVAC 科兴)"
                     shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinovac Vaccine."
                     // dimLevel="light-dim"
-                    backgroundSrc={VaccineBackground}
+                    backgroundSrc={SinovacVaccineBackground}
                     ctaTitle="Check Service"
                     ctaTo="/sinovac-advisory">
                     <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
@@ -78,6 +79,16 @@ export default function ServicesSection() {
                     ctaTo="/articles/lasting-power-of-attorney">
                     <p>A Lasting Power of Attorney (LPA) is a legal document that is important for patients who may lose the ability to think for themselves.</p>
                     <p>Learn more about LPA here.</p>
+                </ServiceCard>
+                <ServiceCard
+                    title="Sinopharm Vaccine (北京生物)"
+                    shortDesc="Protect yourself and your loved ones from COVID-19 by getting vaccinated. Mediview Clinic provides COVID-19 vaccination via the Sinopharm Vaccine."
+                    dimLevel="heavy-dim"
+                    backgroundSrc={SinopharmVaccineBackground}
+                    ctaTitle="Check Service"
+                    ctaTo="/sinopharm-advisory">
+                    <p>Protect yourself and your loved ones from COVID-19 by getting vaccinated.</p>
+                    <p>Mediview Clinic provides COVID-19 vaccination via the Sinopharm Vaccine.</p>
                 </ServiceCard>
             </div>
         </section>

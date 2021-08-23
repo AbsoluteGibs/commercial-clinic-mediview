@@ -14,6 +14,7 @@ import ContactUs from './pages/contact_us/ContactUs'
 import CovidServices from './pages/covid_services/CovidServices'
 import HealthScreening from './pages/health_screening/HealthScreening'
 import SinovacAdvisory from './pages/SinovacAdvisory'
+import SinopharmAdvisory from './pages/SinopharmAdvisory'
 import HomePage from './pages/homepage/HomePage'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
@@ -46,6 +47,7 @@ function App() {
                             <Route path="/covid-services" exact component={CovidServices}/>
                             <Route path="/health-screening" exact component={HealthScreening}/>
                             <Route path="/sinovac-advisory" exact component={SinovacAdvisory}/>
+                            <Route path="/sinopharm-advisory" exact component={SinopharmAdvisory}/>
                             <Route path="/" exact component={HomePage}/>
                             <Route path="*" component={ErrorPage} />
                         </Switch>
