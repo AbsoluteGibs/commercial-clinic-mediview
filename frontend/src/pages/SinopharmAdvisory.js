@@ -68,7 +68,7 @@ function SinopharmAdvisory()
                 <br/>
                 
                 <p>
-                    Singapore is taking a more “inclusive” approach in recognising vaccines approved under WHO's emergency use list, and has allowed those who have taken <b>Sinovac</b> and <b>Sinopharm</b> COVID-19 vaccines to be considered <b>fully-vaccinated</b>.
+                    Singapore is taking a more “inclusive” approach in recognising vaccines approved under WHO's emergency use list, and has allowed those who have taken <b>Sinovac</b> and <b>Sinopharm</b> COVID-19 vaccines to be considered <b>fully vaccinated</b>.
                 </p>
 
                 <p>
