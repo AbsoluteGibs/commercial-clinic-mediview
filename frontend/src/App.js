@@ -3,7 +3,7 @@ import './App.css'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/navbar/Navbar'
 import Logo from './components/Logo'
-// import SinovacFloatingButton from './components/SinovacFloatingButton'
+import SinovacFloatingButton from './components/SinovacFloatingButton'
 import SinopharmFloatingButton from './components/SinopharmFloatingButton'
 import Footer from './components/footer/Footer'
 
@@ -52,7 +52,7 @@ function App() {
                             <Route path="*" component={ErrorPage} />
                         </Switch>
                     </main>
-                    {/* <SinovacFloatingButton/> */}
+                    <SinovacFloatingButton/>
                     <SinopharmFloatingButton/>
                     <Footer />
                 </Router>

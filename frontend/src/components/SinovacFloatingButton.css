@@ -2,9 +2,9 @@
     position:fixed;
 	width:16em;
 	height:5em;
-	bottom:2em;
+	bottom:8em;
 	right:2em;
-	background-color: var(--secondary-color);
+	background-color: #DF6A1B;
 	border-radius:30px;
 	text-align:center;
 	-webkit-box-shadow: -4px 6px 11px 5px rgba(153,153,153,0.65); 
@@ -26,5 +26,5 @@ a{
 
 @media screen and (max-width: 768px) {
     a {font-weight: 500; font-size: 0.8em;}
-    .float {width: 8em;}
+    .sinovacFloat {width: 11em;}
 }
