@@ -77,17 +77,6 @@ function SinopharmAdvisory()
 
             </section>
             <div className="top-padding-50" />
-            {/* <section>
-                <h2>
-                    Sinovac Registration
-                </h2>
-                <p>
-                    <a style={{textDecoration: 'none', color: 'black'}} href="https://forms.gle/9MBvJZyvdc4Uck3A8" target="_blank" rel="noopener noreferrer"><b><u>Register</u></b></a> to get into the queue for your Sinovac vaccination. You will be contacted to come down to the clinic when it is your turn.
-                </p>
-                <p>
-                    Please contact us if there are technical issues revolving around the registration link.
-                </p>
-            </section> */}
         </div>
     )
 }
