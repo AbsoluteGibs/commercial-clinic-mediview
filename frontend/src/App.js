@@ -52,8 +52,8 @@ function App() {
                             <Route path="*" component={ErrorPage} />
                         </Switch>
                     </main>
-                    <SinovacFloatingButton/>
-                    <SinopharmFloatingButton/>
+                    {/* <SinovacFloatingButton/>
+                    <SinopharmFloatingButton/> */}
                     <Footer />
                 </Router>
             </HelmetProvider>

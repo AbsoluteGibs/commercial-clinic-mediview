@@ -71,9 +71,9 @@ function SinopharmAdvisory()
                     Singapore is taking a more “inclusive” approach in recognising vaccines approved under WHO's emergency use list, and has allowed those who have taken <b>Sinovac</b> and <b>Sinopharm</b> COVID-19 vaccines to be considered <b>fully vaccinated</b>.
                 </p>
 
-                <p>
+                {/* <p>
                     We are pleased to announce that <b>Mediview Clinic & Surgery</b> has received the <b>MOH approval</b> to administer the <b>SINOPHARM</b> vaccines on a private basis under <b>SPECIAL ACCESS ROUTE</b>. <a style={{textDecoration: 'none', color: 'black'}} href="https://forms.gle/x5ZZx9wiNWHLUJgG9" target="_blank" rel="noopener noreferrer"><b><u>Register</u></b></a> your interest.
-                </p>
+                </p> */}
 
             </section>
             <div className="top-padding-50" />

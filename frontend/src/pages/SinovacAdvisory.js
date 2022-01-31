@@ -34,7 +34,7 @@ function SinovacAdvisory()
             <div className="top-padding-50" />
             <iframe src="https://drive.google.com/file/d/12U2NB-CwphQc50aSRCJfeCXC3IJw7TvU/preview" width="100%" height="480" allow="autoplay" title="sinovacResponse"></iframe>
             <div className="top-padding-50" />
-            <section>
+            {/* <section>
                 <h2>
                     Sinovac Registration
                 </h2>
@@ -44,7 +44,7 @@ function SinovacAdvisory()
                 <p>
                     Please contact us if there are technical issues revolving around the registration link.
                 </p>
-            </section>
+            </section> */}
         </div>
     )
 }
