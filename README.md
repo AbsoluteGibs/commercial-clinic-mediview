@@ -1,5 +1,5 @@
 # commercial-clinic-mediview
-Clinic website for MEDIVIEW CLINIC &amp; SURGERY PTE LTD.
+Clinic website for MEDIVIEW CLINIC &amp; SURGERY PTE LTD. (NO LONGER RUNNING)
 
 ### Contributing
 Development Setup for `commercial-clinic-mediview`:
