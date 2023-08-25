@@ -18,4 +18,8 @@ npm run start
 ```sh
 npm run server
 ```
-6. :tada: Navigate to https://localhost:3000 &amp; start hacking!
+6. :tada: Navigate to https://localhost:3000 &amp; start hacking!  
+
+
+### Homepage Preview  
+![image](https://github.com/AbsoluteGibs/commercial-clinic-mediview/assets/5389941/4a1ec3a5-f40b-4edd-877d-d1a3ede8a728)
